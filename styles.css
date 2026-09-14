@@ -1,0 +1,102 @@
+body {
+    margin: 3%;
+    background-color: bisque;
+    color: rgb(8, 70, 41);
+}
+textarea {
+    width: 40vw;
+    height: 30vw;
+    font-size: x-large;
+}
+#map {
+    width: 50vw;
+    float: left;
+}
+.image-row {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image-row img {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    flex: 1 1 0;
+}
+#display form input {
+    width: 5em;
+    height: 2em;
+    float: right;
+    margin-top: .8em;
+}
+#movement button {
+    font-size: large;
+    width: 4em;
+    height: 4em;
+    align-self: center;
+    
+}
+#north {
+    margin-left: 4.2em;
+    margin-top: 20px;
+}
+#topContainer {
+    display: flex;
+}
+.mapBorder {
+    border: 5px solid red;
+}
+.hidden {
+    display: none;
+}
+/* tabs */
+.tabs {
+    float: right;
+    width: 40%;
+    max-width: 30em;
+}
+.tabs h3 {
+    color: #c0135b;
+}
+.tabs p {
+    color: rgb(0, 0, 0)4;
+    font-style: normal;
+    font-size: medium;
+}
+.tabs > ul {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.tabs .trigger {
+    list-style-type: none;
+    /* preferred background color hidden for assignment requirements */
+    /* background: #97c8f0; */
+    background-color: #e9abe9;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 10px; /* 10px 20px */
+    cursor: pointer;
+    font-weight: bold;
+}
+.tabs .trigger.active {
+    background: #1930b1;
+    color: white;
+}
+.tabs .content{
+    background-color: bisque;
+   padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.tabs .content.active {
+    display: block;
+}
+.score {
+    margin-top: 30px;
+}
+button {
+    font-size: x-large;
+}

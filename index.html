@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game : MainPage</title>
+    <link href = "styles.css" rel = "stylesheet">
+</head>
+<body>
+    
+    <h1>Forest Adventure</h1>
+    <div class = 'hidden'>
+        <h1>Name:</h1>
+        <h1>Species:</h1>
+    </div>
+
+    <div>
+        <form class = "size-form">
+            <h3>Tell us a bit about yourself!</h3>
+            <label>Name   :</label><br>
+            <input type = "text" id = "name" class = "moreRight" placeholder = "Missy">
+            <label></label><br>
+            <label>Gender :</label><br>
+            <input type = "text" id = "gender" class = "moreRight" placeholder = "Female">
+            <label></label><br>
+            <label>Species:</label><br>
+            <input type = "text" id = "species" class = "moreRight" placeholder = "Human">
+            <label></label><br>
+            <label></label>
+            <h3>Select your map size</h3>
+            <label>Width of playfield</label><br>
+            <input type = "text" id = "horz" placeholder = "5-30">
+            <label class = "bad1"></label><br>
+            <label>Height of playfield</label><br>
+            <input type = "text" id = "vert" placeholder = "5-30">
+            <label class = "bad2"></label><br>
+            
+            <input type = "submit">
+        </form>
+    </div>
+
+    
+    <div id = "topContainer">
+
+        <div id = "map">
+
+        </div>
+        <!-- Tabs Section -->
+        <div class="tabs hidden">
+            <ul>
+                <li class="trigger active" data-target="#display">Adventure Text</li>
+                <li class="trigger" data-target="#inventory">Inventory</li>
+                <li class="trigger" data-target="#charInfo">Guessing Game</li>
+            </ul>
+            <!-- Story text box -->
+            <div id = "display" class = "content active">
+                <textarea readonly>the text will go here</textarea>
+                <form id = "choices">
+                    <!-- <input type = "submit" value = "Continue"> -->
+                </form>
+            </div>
+            <!-- Inventory Page -->
+            <div class="content" id = "inventory">
+                <p>This is the inventory page!</p>
+            </div>
+            <!-- Character Information (quests and story things) -->
+            <div class="content" id = "charInfo">
+                <p>This is the character info page!</p>
+            </div>
+        </div>
+    </div>
+
+    <form id = "movement" class = "hidden">
+        <button type = "button" id = 'north'>Up</button><br>
+        <button type = "button" id = 'west'>Left</button>
+        <button type = "button" id = 'south'>Down</button>
+        <button type = "button" id = 'east'>Right</button>
+    </form>
+
+    
+
+    <div id = "textArea">
+
+    </div>
+    
+
+    <script src = "scripts/Gamework.js"></script>
+    <script src = "scripts/events.js"></script>
+    <script src = "scripts/movement.js"></script>
+    <script src = "scripts/visibility.js"></script>
+    
+</body>
+</html>
