@@ -126,8 +126,8 @@ form.addEventListener('submit', e => {
 
 // dynamically generate terrain
 function landMark(img) {
-    let dieOne = Math.floor(Math.random() * 6) + 1;
-    dieOne += Math.floor(Math.random() * 6) + 1;
+    let dieOne = Math.floor(Math.random() * 10) + 1;
+    dieOne += Math.floor(Math.random() * 10) + 1;
     console.log(dieOne);
     img.className = 'unexplored';
     switch (dieOne) {
@@ -154,15 +154,39 @@ function landMark(img) {
             img.className += ' adventure';
             break;
         case 9:
-            img.className += ' neutral';
+            img.className += ' adventure';
             break;
         case 10:
-            img.className += ' good';
+            img.className += ' adventure';
             break;
         case 11:
-            img.className += ' unique';
+            img.className += ' adventure';
             break;
         case 12:
+            img.className += ' adventure';
+            break;
+        case 13:
+            img.className += ' adventure';
+            break;
+        case 14:
+            img.className += ' adventure';
+            break;
+        case 15:
+            img.className += ' adventure';
+            break;
+        case 16:
+            img.className += ' neutral';
+            break;
+        case 17:
+            img.className += ' neutral';
+            break;
+        case 18:
+            img.className += ' good';
+            break;
+        case 19:
+            img.className += ' unique';
+            break;
+        case 20:
             img.className += ' veryGood';
             break;
     }
