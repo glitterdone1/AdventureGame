@@ -160,19 +160,11 @@ const badEvent = [
     {name: 'event5', eventDesc: '', eventResolution1: '', eventResolution2: ''}
 ];
 const neutralEvent = [
-    // possibly add other parts? Event options?
-    {name: 'event1', eventDesc: '', eventResolution1: '', eventResolution2: ''},
-    {name: 'event2', eventDesc: '', eventResolution1: '', eventResolution2: ''},
-    {name: 'event3', eventDesc: '', eventResolution1: '', eventResolution2: ''},
-    {name: 'event4', eventDesc: '', eventResolution1: '', eventResolution2: ''},
-    {name: 'event5', eventDesc: '', eventResolution1: '', eventResolution2: ''}
-];
-const adventureEvent = [
     {
         name: 'Through Undergrowth',
         scenes: {
             start: {
-                text: 'You hack your way through the dense forest and find a river and path.',
+                text: `You hack your way through the dense forest and find a river and path.`,
                 choices: [
                     {
                         text: 'Go along the river',
@@ -209,6 +201,94 @@ const adventureEvent = [
             fight: {
                 text: 'you fight the brute and its various limbs off and take its money',
                 gold: '30',
+                choices: []
+            }
+        }
+    }
+];
+const adventureEvent = [
+    {
+        name: 'Through the Brush',
+        scenes: {
+            start: {
+                text: `You wend your way through a dense patch of the forest, your eyes sweeping the thick leafy brush below your feet. Anything could be hiding here, and you can hardly see enough to make out more than the dark green fronds that obscure your lower half...
+                
+Thankfully, the trip passes uneventfully as you break your way back into more sparse sections of the forest.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Past the Canopy',
+        scenes: {
+            start: {
+                text: `The way is slow going. It is moments like these that make you wonder if you will ever find a way out of this forest...
+                
+The flutter of wings catch your eye as you follow swift ascent of Lydian songbird, with silvery wings, breaking through the dappled canopy above with a melodic twitter, the melody turning vaguely haunting as a flock of Lydian's join in, spiraling above you in the dappled sunlight before breaking off, spreading out through the forest in different directions.
+
+Whether comforting or disturbing, the experience lingers in your mind.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Deeper Still',
+        scenes: {
+            start: {
+                text: `Deeper and deeper still. You have begun to wonder idly if the forest really has an end. The way trees fade into more... leaves, leaves and branches, seemingly existing with the intention of obfuscating navigation with celestial bodies. If you weren't keeping a map, you'd surely be lost, wandering in circles... It is a sobering thought!`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Vestiges of a Path',
+        scenes: {
+            start: {
+                text: `As you trudge wearily, and perhaps a bit warily, through the forest, you find a cobblestone path, a bit overgrown but a path nonetheless!
+
+However, as you follow the path, after not even twenty paces the way fades back into brush, becoming impossible to follow.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'A Small Stream',
+        scenes: {
+            start: {
+                text: `A faint burbling pleasantly reaches your ears as you walk, and you soon find yourself running nearly parallel to a small brook. Less than two feet across at its thickest, it provides no obstacle for your journey, but the sound provides a calm lull in the travel, and you feel yourself let out a breath you didn't know you'd been holding.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Roots Roots and Roots',
+        scenes: {
+            start: {
+                text: `You have to catch yourself from falling, your foot catching on the root of an apparently difficult tree. Roots, roots, and more roots! You wouldn't mind a clear patch of ground for a change.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Acorn Troubles',
+        scenes: {
+            start: {
+                text: `You fall into a bit of a rhythm as you wander through the forest, the background ambience of life, the rustling wind, the sound of your own footfalls, all merging into vague blur.
+                
+And then you feel something thwack against your head, more startling than painful as you see a small acorn drop beside your feet.
+
+Peering into the trees above, you see a few branches rustling indicating a swift retreat through the tall canopy, and hear a faint chitter of amusement. Whatever it was moves far too quickly to keep pace with, but fortunately seems to be more nuisance than threat. With the unseen being gone, you find yourself free to continue.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Pretty Flowers',
+        scenes: {
+            start: {
+                text: `You break into a small clearing and are amazed to find it full of extraordinary flowers, most unrecognizable in their beauty. Long white tube flowers with elegant serated leaves, crimson and ivory ones resembling lilacs, swaying yellow puffballs with scintillating petals... Too many varieties to name! (Well in any reasonable amount of time!) It probably would be a horticulturist's dream, and certainly is a welcome sight for you. 
+                
+After enjoying the unexpectedly wonderous sight, you prepare to move on.`,
                 choices: []
             }
         }
