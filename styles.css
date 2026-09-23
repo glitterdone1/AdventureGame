@@ -50,6 +50,39 @@ textarea {
 .hidden {
     display: none;
 }
+/* tool tip */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+.tooltip:hover {
+    color: #be22c4;
+    transition: all ease-out .4s;
+    transition-duration: .4s;
+}
+.tip {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    background: #222;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+.tip.active {
+    opacity: 1;
+    visibility: visible;
+}
 /* tabs */
 .tabs {
     float: right;

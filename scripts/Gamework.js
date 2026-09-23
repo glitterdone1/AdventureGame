@@ -44,6 +44,8 @@ form.addEventListener('submit', e => {
     let flag1 = false;
     let flag2 = false;
 
+    inventoryInit();
+
     if(horzPattern.test(horz) && (parseFloat(horz) > 4 && parseFloat(horz) < 31)){
             //good info feedback
             bad1.textContent = '';
