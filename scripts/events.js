@@ -292,6 +292,44 @@ After enjoying the unexpectedly wonderous sight, you prepare to move on.`,
                 choices: []
             }
         }
+    },
+    {
+        name: 'Lost in Thought',
+        scenes: {
+            start: {
+                text: `The journey is slow, and in a lull, you find yourself reminiscing over the choices that have led you ${name}, a ${species}, to set out on road that you have.
+                
+For a moment it is as if you are seeing yourself from an outside view, walking through the forest. The moment passes but leaves you with the unshakeable feeling that every action, good and bad makes one more step on the path of your life.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Boring Forest',
+        scenes: {
+            start: {
+                text: `This part of the forest is drab and uninteresting compared to the rest. The place feels desaturated and the ground is muddy. A few mosquitoes buzzing around are the only break in the monotony. Ugh.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Messing with You',
+        scenes: {
+            start: {
+                text: `Your eyes widen as you spot the legendary sceptre of Kuldroth lying at the base of a tree! It was said to bear the power of ultimate creation and... Oh wait.. This IS just a branch, isn't it? Well, it did look quite impressive... for a branch.`,
+                choices: []
+            }
+        }
+    },
+    {
+        name: 'Daydreaming',
+        scenes: {
+            start: {
+                text: `zzz tbc`,
+                choices: []
+            }
+        }
     }
 ];
 const goodEvent = [

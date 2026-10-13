@@ -16,14 +16,236 @@
     <div>
         <form class = "size-form">
             <h3>Tell us a bit about yourself!</h3>
-            <label>Name   :</label><br>
+            <label for = "name">Name   :</label><br>
             <input type = "text" id = "name" class = "moreRight" placeholder = "Missy">
             <label></label><br>
-            <label>Gender :</label><br>
-            <input type = "text" id = "gender" class = "moreRight" placeholder = "Female">
-            <label></label><br>
-            <label>Species:</label><br>
+            <label for = "gender">Gender :</label><br>
+            <select id = "gender" class = "moreRight">
+                <option value = "Female">Female</option>
+                <option value = "Male">Male</option>
+            </select> <br>
+            <label for = "species">Species:</label><br>
             <input type = "text" id = "species" class = "moreRight" placeholder = "Human">
+            <h3>Let's assign some stats!</h3>
+            <p>You may assign your stats as you please. That being said,
+                here are some guidelines. <br><br> Each stat defaults to an 'average' one, 
+                costing zero points. For each degree above it costs first one point, than three points,
+                 and finally six points for the highest tier. Likewise, for each tier below average it
+                 is -1, -3, and -6 attribute points. For a moderate experience try to not go above 15-20 
+                 positive points! (Though really this is just guesswork!)
+            </p>
+            <h4>1. How strong are you?</h4>
+            <input type = "radio" id = "strength1" name = "strength" class = "moreRight" value = "-6">
+            <label for = "strength1">Pathetic</label>
+            <input type = "radio" id = "strength2" name = "strength" class = "moreRight" value = "-3">
+            <label for = "strength2">Weak</label>
+            <input type = "radio" id = "strength3" name = "strength" class = "moreRight" value = "-1">
+            <label for = "strength3">Scrawny</label>
+            <input type = "radio" id = "strength4" name = "strength" class = "moreRight" value = "0" checked>
+            <label for = "strength4">Average</label>
+            <input type = "radio" id = "strength5" name = "strength" class = "moreRight" value = "1">
+            <label for = "strength5">Athletic</label>
+            <input type = "radio" id = "strength6" name = "strength" class = "moreRight" value = "3">
+            <label for = "strength6">Brawny</label>
+            <input type = "radio" id = "strength7" name = "strength" class = "moreRight" value = "6">
+            <label for = "strength7">Powerhouse</label>
+
+            <h4>2. How fast can you run?</h4>
+            <input type = "radio" id = "speed1" name = "speed" class = "moreRight" value = "-6">
+            <label for = "speed1">Slowpoke Rodriguez</label>
+            <input type = "radio" id = "speed2" name = "speed" class = "moreRight" value = "-3">
+            <label for = "speed2">Slower</label>
+            <input type = "radio" id = "speed3" name = "speed" class = "moreRight" value = "-1">
+            <label for = "speed3">Slow</label>
+            <input type = "radio" id = "speed4" name = "speed" class = "moreRight" value = "0" checked>
+            <label for = "speed4">Average</label>
+            <input type = "radio" id = "speed5" name = "speed" class = "moreRight" value = "1">
+            <label for = "speed5">Quick</label>
+            <input type = "radio" id = "speed6" name = "speed" class = "moreRight" value = "3">
+            <label for = "speed6">Zippy</label>
+            <input type = "radio" id = "speed7" name = "speed" class = "moreRight" value = "6">
+            <label for = "speed7">Speedy Gonzales</label>
+
+            <h4>3. What about your reflexes?</h4>
+            <input type = "radio" id = "reflexes1" name = "reflexes" class = "moreRight" value = "-6">
+            <label for = "reflexes1">Wait what?</label>
+            <input type = "radio" id = "reflexes2" name = "reflexes" class = "moreRight" value = "-3">
+            <label for = "reflexes2">Sluggish</label>
+            <input type = "radio" id = "reflexes3" name = "reflexes" class = "moreRight" value = "-1">
+            <label for = "reflexes3">Delayed</label>
+            <input type = "radio" id = "reflexes4" name = "reflexes" class = "moreRight" value = "0" checked>
+            <label for = "reflexes4">Average</label>
+            <input type = "radio" id = "reflexes5" name = "reflexes" class = "moreRight" value = "1">
+            <label for = "reflexes5">Fast</label>
+            <input type = "radio" id = "reflexes6" name = "reflexes" class = "moreRight" value = "3">
+            <label for = "reflexes6">Precise</label>
+            <input type = "radio" id = "reflexes7" name = "reflexes" class = "moreRight" value = "6">
+            <label for = "reflexes7">Uncanny</label>
+
+            <h4>4. Okay, are you very dexterous... Nimble?</h4>
+            <input type = "radio" id = "dexterity1" name = "dexterity" class = "moreRight" value = "-6">
+            <label for = "dexterity1">I fall over a lot</label>
+            <input type = "radio" id = "dexterity2" name = "dexterity" class = "moreRight" value = "-3">
+            <label for = "dexterity2">Klutzy</label>
+            <input type = "radio" id = "dexterity3" name = "dexterity" class = "moreRight" value = "-1">
+            <label for = "dexterity3">Clumsy</label>
+            <input type = "radio" id = "dexterity4" name = "dexterity" class = "moreRight" value = "0" checked>
+            <label for = "dexterity4">Average</label>
+            <input type = "radio" id = "dexterity5" name = "dexterity" class = "moreRight" value = "1">
+            <label for = "dexterity5">Spry</label>
+            <input type = "radio" id = "dexterity6" name = "dexterity" class = "moreRight" value = "3">
+            <label for = "dexterity6">Agile</label>
+            <input type = "radio" id = "dexterity7" name = "dexterity" class = "moreRight" value = "6">
+            <label for = "dexterity7">Deft</label>
+
+            <h4>5. Mhm, well what about endurance? How much can you take?</h4>
+            <input type = "radio" id = "endurance1" name = "endurance" class = "moreRight" value = "-6">
+            <label for = "endurance1">Nothing, please!</label>
+            <input type = "radio" id = "endurance2" name = "endurance" class = "moreRight" value = "-3">
+            <label for = "endurance2">Frail</label>
+            <input type = "radio" id = "endurance3" name = "endurance" class = "moreRight" value = "-1">
+            <label for = "endurance3">Avoidant</label>
+            <input type = "radio" id = "endurance4" name = "endurance" class = "moreRight" value = "0" checked>
+            <label for = "endurance4">Average</label>
+            <input type = "radio" id = "endurance5" name = "endurance" class = "moreRight" value = "1">
+            <label for = "endurance5">Tried</label>
+            <input type = "radio" id = "endurance6" name = "endurance" class = "moreRight" value = "3">
+            <label for = "endurance6">Rugged</label>
+            <input type = "radio" id = "endurance7" name = "endurance" class = "moreRight" value = "6">
+            <label for = "endurance7">Beaten but unbroken</label>
+
+            <h4>6. Right, and... How healthy would you say you are?</h4>
+            <input type = "radio" id = "health1" name = "health" class = "moreRight" value = "-6">
+            <label for = "health1">Fragile, handle with care!</label>
+            <input type = "radio" id = "health2" name = "health" class = "moreRight" value = "-3">
+            <label for = "health2">Frail</label>
+            <input type = "radio" id = "health3" name = "health" class = "moreRight" value = "-1">
+            <label for = "health3">Flimsy</label>
+            <input type = "radio" id = "health4" name = "health" class = "moreRight" value = "0" checked>
+            <label for = "health4">Average</label>
+            <input type = "radio" id = "health5" name = "health" class = "moreRight" value = "1">
+            <label for = "health5">Well</label>
+            <input type = "radio" id = "health6" name = "health" class = "moreRight" value = "3">
+            <label for = "health6">Hearty</label>
+            <input type = "radio" id = "health7" name = "health" class = "moreRight" value = "6">
+            <label for = "health7">Healthy as a horse! Neigh</label>
+
+            <h4>7. Well, what about your willpower? Are you quite disciplined?</h4>
+            <input type = "radio" id = "willpower1" name = "willpower" class = "moreRight" value = "-6">
+            <label for = "willpower1">I just kinda drift wherever</label>
+            <input type = "radio" id = "willpower2" name = "willpower" class = "moreRight" value = "-3">
+            <label for = "willpower2">Side-tracked</label>
+            <input type = "radio" id = "willpower3" name = "willpower" class = "moreRight" value = "-1">
+            <label for = "willpower3">Unfocused</label>
+            <input type = "radio" id = "willpower4" name = "willpower" class = "moreRight" value = "0" checked>
+            <label for = "willpower4">Average</label>
+            <input type = "radio" id = "willpower5" name = "willpower" class = "moreRight" value = "1">
+            <label for = "willpower5">Stern</label>
+            <input type = "radio" id = "willpower6" name = "willpower" class = "moreRight" value = "3">
+            <label for = "willpower6">Stoic</label>
+            <input type = "radio" id = "willpower7" name = "willpower" class = "moreRight" value = "6">
+            <label for = "willpower7">Regimented... Well if I were part of a regime</label>
+
+            <h4>8. I see! Learned lots? Would you call yourself experienced?</h4>
+            <input type = "radio" id = "experience1" name = "experience" class = "moreRight" value = "-6">
+            <label for = "experience1">I may have been born yesterday</label>
+            <input type = "radio" id = "experience2" name = "experience" class = "moreRight" value = "-3">
+            <label for = "experience2">Easily taken in</label>
+            <input type = "radio" id = "experience3" name = "experience" class = "moreRight" value = "-1">
+            <label for = "experience3">A bit naïve</label>
+            <input type = "radio" id = "experience4" name = "experience" class = "moreRight" value = "0" checked>
+            <label for = "experience4">Average</label>
+            <input type = "radio" id = "experience5" name = "experience" class = "moreRight" value = "1">
+            <label for = "experience5">Well-versed</label>
+            <input type = "radio" id = "experience6" name = "experience" class = "moreRight" value = "3">
+            <label for = "experience6">Knowledgeable</label>
+            <input type = "radio" id = "experience7" name = "experience" class = "moreRight" value = "6">
+            <label for = "experience7">Conversant with things</label>
+
+            <h4>9. Fair enough! Any talent for noticing things? Observation?</h4>
+            <input type = "radio" id = "perception1" name = "perception" class = "moreRight" value = "-6">
+            <label for = "perception1">Was there a question?</label>
+            <input type = "radio" id = "perception2" name = "perception" class = "moreRight" value = "-3">
+            <label for = "perception2">Oblivious</label>
+            <input type = "radio" id = "perception3" name = "perception" class = "moreRight" value = "-1">
+            <label for = "perception3">Unobservant</label>
+            <input type = "radio" id = "perception4" name = "perception" class = "moreRight" value = "0" checked>
+            <label for = "perception4">Average</label>
+            <input type = "radio" id = "perception5" name = "perception" class = "moreRight" value = "1">
+            <label for = "perception5">I pay attention</label>
+            <input type = "radio" id = "perception6" name = "perception" class = "moreRight" value = "3">
+            <label for = "perception6">Perceptive</label>
+            <input type = "radio" id = "perception7" name = "perception" class = "moreRight" value = "6">
+            <label for = "perception7">Eyes like a hawk!... In the back of my head too!</label>
+
+            <h4>10. Well what about remaining unnoticed? Can you disappear? Are you stealthy??</h4>
+            <input type = "radio" id = "stealth1" name = "stealth" class = "moreRight" value = "-6">
+            <label for = "stealth1">I just go clomping around!</label>
+            <input type = "radio" id = "stealth2" name = "stealth" class = "moreRight" value = "-3">
+            <label for = "stealth2">Obvious</label>
+            <input type = "radio" id = "stealth3" name = "stealth" class = "moreRight" value = "-1">
+            <label for = "stealth3">Stark</label>
+            <input type = "radio" id = "stealth4" name = "stealth" class = "moreRight" value = "0" checked>
+            <label for = "stealth4">Average</label>
+            <input type = "radio" id = "stealth5" name = "stealth" class = "moreRight" value = "1">
+            <label for = "stealth5">Obscure</label>
+            <input type = "radio" id = "stealth6" name = "stealth" class = "moreRight" value = "3">
+            <label for = "stealth6">Covert</label>
+            <input type = "radio" id = "stealth7" name = "stealth" class = "moreRight" value = "6">
+            <label for = "stealth7">I can avoid being seen if I wish</label>
+
+            <h4>11. And what about socially? Are you persuasive? Good at convincing?</h4>
+            <input type = "radio" id = "persuasion1" name = "persuasion" class = "moreRight" value = "-6">
+            <label for = "persuasion1">I'm not well liked</label>
+            <input type = "radio" id = "persuasion2" name = "persuasion" class = "moreRight" value = "-3">
+            <label for = "persuasion2">Rough...</label>
+            <input type = "radio" id = "persuasion3" name = "persuasion" class = "moreRight" value = "-1">
+            <label for = "persuasion3">Rough around the edges</label>
+            <input type = "radio" id = "persuasion4" name = "persuasion" class = "moreRight" value = "0" checked>
+            <label for = "persuasion4">Average</label>
+            <input type = "radio" id = "persuasion5" name = "persuasion" class = "moreRight" value = "1">
+            <label for = "persuasion5">I have my ways</label>
+            <input type = "radio" id = "persuasion6" name = "persuasion" class = "moreRight" value = "3">
+            <label for = "persuasion6">Charming!</label>
+            <input type = "radio" id = "persuasion7" name = "persuasion" class = "moreRight" value = "6">
+            <label for = "persuasion7">Who, me? Not half as good as you I'm sure~</label>
+
+            <h4>12. Neat... Now do you have any funds, finances, fiscal means?</h4>
+            <input type = "radio" id = "money1" name = "money" class = "moreRight" value = "-6">
+            <label for = "money1">Destitute</label>
+            <input type = "radio" id = "money2" name = "money" class = "moreRight" value = "-3">
+            <label for = "money2">Impoverished </label>
+            <input type = "radio" id = "money3" name = "money" class = "moreRight" value = "-1">
+            <label for = "money3">Poor</label>
+            <input type = "radio" id = "money4" name = "money" class = "moreRight" value = "0" checked>
+            <label for = "money4">Average</label>
+            <input type = "radio" id = "money5" name = "money" class = "moreRight" value = "1">
+            <label for = "money5">Walking around cash</label>
+            <input type = "radio" id = "money6" name = "money" class = "moreRight" value = "3">
+            <label for = "money6">A bit of bling</label>
+            <input type = "radio" id = "money7" name = "money" class = "moreRight" value = "6">
+            <label for = "money7">Well I AM fabulously wealthy~</label>
+
+            <h4>13. Ask yourself a question. 'Do I feel lucky?' Well, do ya, punk?</h4>
+            <input type = "radio" id = "luck1" name = "luck" class = "moreRight" value = "-6">
+            <label for = "luck1">I think I'm cursed!</label>
+            <input type = "radio" id = "luck2" name = "luck" class = "moreRight" value = "-3">
+            <label for = "luck2">Bad luck follows me</label>
+            <input type = "radio" id = "luck3" name = "luck" class = "moreRight" value = "-1">
+            <label for = "luck3">Unfortunate</label>
+            <input type = "radio" id = "luck4" name = "luck" class = "moreRight" value = "0" checked>
+            <label for = "luck4">Average</label>
+            <input type = "radio" id = "luck5" name = "luck" class = "moreRight" value = "1">
+            <label for = "luck5">Probably just a fluke</label>
+            <input type = "radio" id = "luck6" name = "luck" class = "moreRight" value = "3">
+            <label for = "luck6">Blessed</label>
+            <input type = "radio" id = "luck7" name = "luck" class = "moreRight" value = "6">
+            <label for = "luck7">Heck, I bet lucky IS my middle name!</label>
+
+
+
+
+            
             <label></label><br>
             <label></label>
             <h3>Select your map size</h3>
@@ -35,6 +257,7 @@
             <label class = "bad2"></label><br>
             
             <input type = "submit">
+            <input type="reset" value="Reset">
         </form>
     </div>
 
@@ -47,9 +270,9 @@
         <!-- Tabs Section -->
         <div class="tabs hidden">
             <ul>
-                <li class="trigger active" data-target="#display">Adventure Text</li>
-                <li class="trigger" data-target="#inventory">Inventory</li>
-                <li class="trigger" data-target="#charInfo">Guessing Game</li>
+                <li class = "trigger active" data-target = "#display">Adventure Text</li>
+                <li class = "trigger" data-target = "#inventory">Inventory</li>
+                <li class = "trigger" data-target = "#charInfo">Character Info</li>
             </ul>
             <!-- Story text box -->
             <div id = "display" class = "content active">
@@ -59,7 +282,7 @@
                 </form>
             </div>
             <!-- Inventory Page -->
-            <div class="content" id = "inventory">
+            <div class = "content" id = "inventory">
                 <h3 id = "inventoryHeader"></h3>
                 <h4>Inventory</h4><hr>
                 <ul id = "inventoryItems"></ul>

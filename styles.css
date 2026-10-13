@@ -50,6 +50,9 @@ textarea {
 .hidden {
     display: none;
 }
+p {
+    max-width: 40em;
+}
 /* tool tip */
 .tooltip {
     position: relative;
